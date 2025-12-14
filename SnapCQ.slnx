@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/benchmarks/" />
+  <Folder Name="/docs/">
+    <Project Path="docs/SnapCQ.Documentation/SnapCQ.Documentation.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/SnapCQ/SnapCQ.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <File Path="LICENSE" />
+</Solution>
