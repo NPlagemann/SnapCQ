@@ -3,9 +3,17 @@
   <Folder Name="/docs/">
     <Project Path="docs/SnapCQ.Documentation/SnapCQ.Documentation.csproj" />
   </Folder>
+  <Folder Name="/examples/">
+    <Project Path="examples/Example.MediatR/Example.MediatR.csproj" />
+    <Project Path="examples/Example.Rebus/Example.Rebus.csproj" />
+    <Project Path="examples/Example.SnapCQ/Example.SnapCQ.csproj" />
+    <Project Path="examples/Example.Wolverine/Example.Wolverine.csproj" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/SnapCQ/SnapCQ.csproj" />
   </Folder>
-  <Folder Name="/tests/" />
+  <Folder Name="/tests/">
+    <Project Path="tests/SnapCQ.UnitTests/SnapCQ.UnitTests.csproj" />
+  </Folder>
   <File Path="LICENSE" />
 </Solution>

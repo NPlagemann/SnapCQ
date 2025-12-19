@@ -47,8 +47,11 @@ public static class ServiceCollectionExtensions
         /// <see cref="ServiceLifetime.Scoped" />.
         /// </param>
         /// <returns>The updated service collection to enable method chaining.</returns>
+        public IServiceCollection AddDispatcher(params Assembly[] assemblies)
+            => services.AddDispatcher(assemblies, ServiceLifetime.Scoped);
+
         public IServiceCollection AddDispatcher(Assembly[] assemblies,
-            ServiceLifetime handlerLifetime = ServiceLifetime.Scoped)
+            ServiceLifetime handlerLifetime)
         {
             ArgumentNullException.ThrowIfNull(services);
             ArgumentNullException.ThrowIfNull(assemblies);
