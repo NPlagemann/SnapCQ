@@ -111,8 +111,7 @@ public sealed class Dispatcher : IDispatcher
             var result = await cachedInfo.HandlerDelegate(handler, request, ct).ConfigureAwait(false);
             return (TResponse)result;
         };
-
-
+        
         for (var i = behaviorsArray.Length - 1; i >= 0; i--)
         {
             var behavior = behaviorsArray[i];
